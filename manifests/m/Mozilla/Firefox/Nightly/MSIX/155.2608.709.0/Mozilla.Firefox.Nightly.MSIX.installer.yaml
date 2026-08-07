@@ -1,0 +1,52 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: Mozilla.Firefox.Nightly.MSIX
+PackageVersion: 155.2608.709.0
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.17763.0
+InstallerType: msix
+UpgradeBehavior: install
+Protocols:
+- http
+- https
+- mailto
+FileExtensions:
+- avif
+- htm
+- html
+- pdf
+- shtml
+- svg
+- webp
+- xht
+- xhtml
+PackageFamilyName: Mozilla.MozillaFirefoxNightly_jag0gd4e3s9p2
+RestrictedCapabilities:
+- runFullTrust
+ReleaseDate: 2026-08-07
+AppsAndFeaturesEntries:
+- DisplayName: Firefox Nightly
+  Publisher: Mozilla Corporation
+Installers:
+- Architecture: x86
+  InstallerUrl: https://ftp.mozilla.org/pub/firefox/nightly/2026/08/2026-08-07-09-46-15-mozilla-central/firefox-155.0a1.multi.win32.installer.msix
+  InstallerSha256: 2669E3CC9C2D24DE1F1B7E94C87F1D036183A808189D7ACFF0298317B0B8BC65
+  SignatureSha256: 1FAAF9C9287FFBCDAB3A1A4EA2E415296D0A75C0D14C6941FF3260781D91692D
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Mozilla.MozillaFirefoxNightly_155.2608.709.0_x86__jag0gd4e3s9p2'
+- Architecture: x64
+  InstallerUrl: https://ftp.mozilla.org/pub/firefox/nightly/2026/08/2026-08-07-09-46-15-mozilla-central/firefox-155.0a1.multi.win64.installer.msix
+  InstallerSha256: FF04FD4AC27495D0746D539FE4C8C3F703362FA4242B549F07CB400AAFA8A083
+  SignatureSha256: 8D00878426418ABD6287B3FB752F06C1D2980E2780EF866AD3E476FAA639F0C0
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Mozilla.MozillaFirefoxNightly_155.2608.709.0_x64__jag0gd4e3s9p2'
+- Architecture: arm64
+  InstallerUrl: https://ftp.mozilla.org/pub/firefox/nightly/2026/08/2026-08-07-09-46-15-mozilla-central/firefox-155.0a1.multi.win64-aarch64.installer.msix
+  InstallerSha256: 22BF6DD181BC87E6DD7BD81457DFC0B93617F4AC4DDFF3D8A26E0A62E442A32C
+  SignatureSha256: 897085D1C1C353E37913264BEA8C8B432F8331BBA88F7E575B3A02A2F6EE80DE
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Mozilla.MozillaFirefoxNightly_155.2608.709.0_arm64__jag0gd4e3s9p2'
+ManifestType: installer
+ManifestVersion: 1.12.0
