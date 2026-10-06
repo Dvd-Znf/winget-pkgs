@@ -3,6 +3,7 @@
 
 PackageIdentifier: JMMG.TextFileEditor
 PackageVersion: '2.0'
+PackageUrl: https://www.jmmgc.com/editor/en.php
 PackageLocale: en-US
 Publisher: JMMG Communications
 PackageName: Text File Editor
