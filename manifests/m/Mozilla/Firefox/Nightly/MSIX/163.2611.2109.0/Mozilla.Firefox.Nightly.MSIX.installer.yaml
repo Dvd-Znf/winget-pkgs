@@ -1,0 +1,53 @@
+# Created with komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: Mozilla.Firefox.Nightly.MSIX
+PackageVersion: 163.2611.2109.0
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.17763.0
+InstallerType: msix
+UpgradeBehavior: install
+Protocols:
+- http
+- https
+- mailto
+FileExtensions:
+- avif
+- htm
+- html
+- pdf
+- shtml
+- svg
+- webp
+- xht
+- xhtml
+PackageFamilyName: Mozilla.MozillaFirefoxNightly_jag0gd4e3s9p2
+RestrictedCapabilities:
+- runFullTrust
+ReleaseDate: 2026-11-21
+AppsAndFeaturesEntries:
+- DisplayName: Firefox Nightly
+  Publisher: Mozilla Corporation
+  DisplayVersion: 163.2611.2109.0
+Installers:
+- Architecture: x86
+  InstallerUrl: https://ftp.mozilla.org/pub/firefox/nightly/2026/11/2026-11-21-09-35-49-mozilla-central/firefox-163.0a1.multi.win32.installer.msix
+  InstallerSha256: C7AD64916F0F57D6C58B7FE581F49C9F8F61DBE213F38BF69C4D576AB3B21D2F
+  SignatureSha256: 61E37E686969D716DA0D677A2AC82A3DD14E51EB0EB5C02B28810938ADE16DEF
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Mozilla.MozillaFirefoxNightly_163.2611.2109.0_x86__jag0gd4e3s9p2'
+- Architecture: x64
+  InstallerUrl: https://ftp.mozilla.org/pub/firefox/nightly/2026/11/2026-11-21-09-35-49-mozilla-central/firefox-163.0a1.multi.win64.installer.msix
+  InstallerSha256: C0766E656CD5BE3A608903535D14AC97EDD094A501F3164AD4CBDC4619095ADF
+  SignatureSha256: 34E7B3E28128A249F2F917500022BCDBF831330148F489312E985C5C89D30738
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Mozilla.MozillaFirefoxNightly_163.2611.2109.0_x64__jag0gd4e3s9p2'
+- Architecture: arm64
+  InstallerUrl: https://ftp.mozilla.org/pub/firefox/nightly/2026/11/2026-11-21-09-35-49-mozilla-central/firefox-163.0a1.multi.win64-aarch64.installer.msix
+  InstallerSha256: 80C6EC88C51161D5E8FD138CE1BE4DB7A015F3913F20D46D4EC8DC5D3C630348
+  SignatureSha256: AE350B77811953A976A814928F6CA219492FB4575FD2F7DEBDC5044917B59F86
+  InstallationMetadata:
+    DefaultInstallLocation: '%ProgramFiles%/WindowsApps/Mozilla.MozillaFirefoxNightly_163.2611.2109.0_arm64__jag0gd4e3s9p2'
+ManifestType: installer
+ManifestVersion: 1.28.0
